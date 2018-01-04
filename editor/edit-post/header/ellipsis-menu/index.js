@@ -10,6 +10,7 @@ import { IconButton, Dropdown } from '@wordpress/components';
 import './style.scss';
 import ModeSwitcher from '../mode-switcher';
 import FixedToolbarToggle from '../fixed-toolbar-toggle';
+import EditorActions from '../editor-actions';
 
 const element = (
 	<Dropdown
@@ -26,6 +27,7 @@ const element = (
 		renderContent={ ( { onClose } ) => (
 			<div>
 				<ModeSwitcher onSelect={ onClose } />
+				<EditorActions />
 				<div className="editor-ellipsis-menu__separator" />
 				<FixedToolbarToggle onToggle={ onClose } />
 			</div>
