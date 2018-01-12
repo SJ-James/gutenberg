@@ -27,9 +27,10 @@ const element = (
 		renderContent={ ( { onClose } ) => (
 			<div>
 				<ModeSwitcher onSelect={ onClose } />
-				<EditorActions />
 				<div className="editor-ellipsis-menu__separator" />
 				<FixedToolbarToggle onToggle={ onClose } />
+				<div className="editor-ellipsis-menu__separator" />
+				<EditorActions />
 			</div>
 		) }
 	/>
